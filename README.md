@@ -87,7 +87,7 @@ public class AnotherMaster {
 }
 ```
 
-###Prototype scope vs Singleton scope
+### Prototype scope vs Singleton scope
 Which will be the effect of:
 ```xml
 <bean class="com.cegeka.academy.spring.beans.PrototypeDog" name="prototypeDog" scope="prototype"/>
@@ -103,7 +103,7 @@ public class Master {
 }
 ```
 
-###Handle multiple beans of the same type
+### Handle multiple beans of the same type
 Create a new interface called *Cat* and two implementations of it, called *MyFirstCat* and *MySecondCat*.<br />
 Add a new method in Cat interface, called *meow()* and add the implementations of this method in the concrete classes (MyFirstCat and MySecondCat).
 
@@ -111,7 +111,7 @@ Use the appropiate annotations to inject one of the cats defined above, in the *
 
 Is it possible to inject all the cats in the *Master* bean?
 
-###Using @Value annotation
+### Using @Value annotation
 In application.properties, add: *cat1.name=Tom*<br />
 In MyFirstCat class, you can use the property defined above:
 ```java
@@ -119,7 +119,7 @@ In MyFirstCat class, you can use the property defined above:
     private String name;
 ```
 
-###Using starters
+### Using starters
 The next exercise involves connecting our application to a database. We will create a new table where we will insert 10 random numbers. Finally, we will read and display the numbers inserted in the database.<br />
 Further on, we will simulate how to work with DB, using JDBC. <br />
 For this, we will use an in memory database(H2):
