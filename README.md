@@ -88,13 +88,13 @@ public class AnotherMaster {
 ```
 
 ### Prototype scope vs Singleton scope
-Which will be the effect of:
+What will be the effect of:
 ```xml
 <bean class="com.cegeka.academy.spring.beans.PrototypeDog" name="prototypeDog" scope="prototype"/>
 ```
 
 ### Lazy loading
-Which will be the effect of:
+What will be the effect of:
 ```java
 @Component
 @Lazy
